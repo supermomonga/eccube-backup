@@ -23,12 +23,12 @@ Backup::Model.new(:eccube_db_backup, 'EC-CUBE database backup') do
   end
 
   store_with S3 do |s3|
-    s3.access_key_id
-    s3.secret_access_key
-    s3.region
-    s3.bucket
-    s3.path
-    s3.keep
+    s3.access_key_id     = config["s3"]["access_key_id"]
+    s3.secret_access_key = config["s3"]["secret_access_key"]
+    s3.region            = config["s3"]["region"]
+    s3.bucket            = config["s3"]["bucket"]
+    s3.path              = config["s3"]["path"]
+    s3.keep              = config["s3"]["keep"]
   end
 
   compress_with Gzip

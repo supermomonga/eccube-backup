@@ -1,14 +1,21 @@
-
 s3:
-  access_key: hi
-  secret_key: secret_hi
+  access_key_id: hi
+  secret_access_key: secret_hi
   region: tokyo
   bucket: bucket
+  path: '/'
   keep: 60
 mysql:
   database: dbname
-  user: uname
-  pass: pwd
-  port: port
+  username: dbuser
+  password: passwd
+  host: localhost
+  port: 3306
   socket: socket
-
+  additional_option:
+    - "--quick"
+    - "--single-transaction"
+files:
+  dir: '/home/user/www/'
+notify:
+  endpoint: http://example.com/
