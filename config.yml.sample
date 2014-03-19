@@ -1,0 +1,14 @@
+
+s3:
+  access_key: hi
+  secret_key: secret_hi
+  region: tokyo
+  bucket: bucket
+  keep: 60
+mysql:
+  database: dbname
+  user: uname
+  pass: pwd
+  port: port
+  socket: socket
+
