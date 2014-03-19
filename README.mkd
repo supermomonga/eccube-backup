@@ -1,0 +1,10 @@
+## EC-CUBE Backup
+
+This helps you to backup whole data of your EC-CUBE site.
+
+- MySQL dump to save Amazon S3
+- Whole files to save Amazon S3
+
+### How to use
+
+(TBD)
